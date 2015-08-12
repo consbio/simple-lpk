@@ -4,6 +4,8 @@ Simple tool for creating an ArcGIS layer package from a shapefile.
 This tool simply applies pre-created layer files to a shapefile, and adds them to a zip file with the appropriate
 folder layout.
 
+This tool is intended for content contributors to [Data Basin](http://databasin.org/) who are otherwise unable to create layer packages (one of the few supported upload formats at this time).
+
 The pre-generated styles are:
 * red dots for point shapefiles
 * black lines for line shapefiles
@@ -21,6 +23,10 @@ The pre-generated styles are:
 ```console
 > pkg_lpk in.shp out.lpk
 ```
+
+
+## See Also:
+For full-featured GIS and creation of layer packages, we encourage you to obtain [ArcGIS Desktop](http://www.esri.com/software/arcgis/arcgis-for-desktop/pricing).  Nonprofit and discount licenses are also available.
 
 
 ### Note:
