@@ -20,7 +20,10 @@ GEOM_TYPES = {
     1: 'point',
     3: 'line',
     5: 'polygon',
-    8: 'point'  # MultiPoint
+    8: 'point',  # MultiPoint
+    11: 'point',  # PointZ
+    13: 'line',  # PolylineZ
+    15: 'polygon'  # PolygonZ
 }
 # other types not yet supported
 
