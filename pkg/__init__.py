@@ -1,6 +1,7 @@
 import glob
 import os
 import click
+import pkg_resources
 import struct
 import tempfile
 import shutil
@@ -66,8 +67,9 @@ def create_lpk(shpfilename, outfilename):
         lyr_dir = os.path.join(tmpdir, 'v10')
         os.mkdir(lyr_dir)
         shutil.copy(
-            os.path.join(os.path.dirname(__file__), 'lyr', '{0}.lyr'.format(geom_type)),
-            os.path.join(lyr_dir, LYR))
+            os.path.join(pkg_resources.resource_filename(__name__, 'lyr/{0}.lyr'.format(geom_type))),
+            os.path.join(lyr_dir, LYR)
+        )
 
         esri_dir = os.path.join(tmpdir, 'esriinfo')
         os.mkdir(esri_dir)

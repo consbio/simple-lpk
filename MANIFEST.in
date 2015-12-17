@@ -1,2 +1,2 @@
-graft lyr
+recursive-include pkg/lyr *
 exclude MANIFEST.in
