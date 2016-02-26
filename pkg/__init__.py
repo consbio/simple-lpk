@@ -96,13 +96,19 @@ def create_lpk(shpfilename, outfilename):
 
 @click.command(short_help="Create a simple ArcGIS layer package from a shapefile")
 @click.argument('shp')
-@click.argument('lpk', type=click.Path(exists=False))
-def pkg_lpk(shp, lpk):
+def pkg_lpk(shp):
     """Example:
 
     \b
-    > pkg_lpk in.shp out.lpk
+    > pkg_lpk in.shp
+    creates file in.lpk
+
+    wildcards allowed:
+    \b
+    > pkg_lpk *.shp
     """
 
-    create_lpk(shp, lpk)
+    for shp in glob.glob(shp):
+        create_lpk(shp, shp.replace('.shp', '.lpk'))
+
 

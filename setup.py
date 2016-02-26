@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='simple-lpk',
-    version='0.0.4',
+    version='0.0.5',
     url='https://github.com/databasin/simple-lpk',
     license='see LICENSE',
     author='databasin',

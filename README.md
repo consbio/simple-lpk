@@ -21,8 +21,17 @@ The pre-generated styles are:
 ## Example Usage:
 
 ```console
-> pkg_lpk in.shp out.lpk
+> pkg_lpk in.shp
 ```
+
+creates a file called `in.lpk`
+
+Wildcards are allowed:
+
+```console
+> pkg_lpk *.shp
+```
+
 
 
 ## See Also:
